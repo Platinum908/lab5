@@ -1,0 +1,36 @@
+﻿<Window x:Class="lab5.MainWindow"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label FontSize="20">Первая дата</Label>
+        
+        <TextBox Grid.Row="0" Grid.Column="0" Margin="20 50" x:Name="year"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="20 50" x:Name="month"/>
+        <TextBox Grid.Row="0" Grid.Column="2" Margin="20 50" x:Name="day"/>
+
+        <Label FontSize="20" Grid.Row="1">Вторая дата</Label>
+        <TextBox Grid.Row="1" Grid.Column="0" Margin="20 50" x:Name="year1"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="20 50" x:Name="month1"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Margin="20 50" x:Name="day1"/>
+        <Label FontSize="20" Grid.Row="2">Ответ</Label>
+        <TextBlock Name="res" Grid.Row="2" Margin="20 50"/>
+        <Button Grid.Column="3" Margin="20 50" Name="rescalc" Content="Подсчитать" Click="rescalc_Click"/>
+    </Grid>
+</Window>
